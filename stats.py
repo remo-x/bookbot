@@ -26,8 +26,6 @@ def sorted_dictionary(book):
             sorted_dict.append({"char":ch,"num":cnt})
     sorted_dict.sort(reverse=True, key=sort_on)
 
-    for item in sorted_dict:
-        print(item["char"], ":", item["num"])
     
     return sorted_dict
 

@@ -1,7 +1,4 @@
-from stats import split_function
-from stats import count_characters
-from stats import sort_on
-from stats import sorted_dictionary
+from stats import *
 import sys
 def get_book_text(path):
     with open(path) as f:
@@ -23,7 +20,7 @@ def main():
     print(f"Found {word_count} total words")
     print("--------- Character Count -------")
     for item in new_dict:
-   	 print(f"{item['char']}: {item['num']}")
+        print(item["char"], ":", item["num"])
     print("============= END ===============")
 
 main()
